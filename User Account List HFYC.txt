@@ -1,0 +1,52 @@
+Consultor:
+
+1. TP: TP017321
+   Name: James Mason
+   Role: Life Consultation
+   Username: james
+   Password: 123
+
+2. TP: TP123098
+   Name: Lincoln Abraham
+   Role: Further Studies
+   Username: lincoln
+   Pass: 123
+
+3. Username: lim_consultor
+   Pass: lim
+   Role: Fitness
+
+4. Username: lim_consultor2
+   Pass: lim
+   Role: Mental Health
+
+5. Username: jeremy_consultor
+   Pass: 123
+   Role: Career
+
+6. Username: sia_consultor
+   Pass: sia
+   Role: Academic
+   
+User:
+
+1. Username: lim_student
+   Pass: lim
+
+2. Username: jeremy_user
+   Pass: 123
+
+3. Username: sia	
+   Pass: sia
+
+4. Username: fuad
+   Pass: lim
+
+Admin: 
+
+1. Username: lim	 
+   Pass: lim
+
+2. Username: irfan	 
+   Pass: irfan
+

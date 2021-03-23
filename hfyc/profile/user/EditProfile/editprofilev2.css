@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital@1&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #64b5f6;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.editprofile {
+    background: #fff;
+    width: 105%;
+    text-align: center;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.editprofile h1 {
+    font-size: 3rem;
+    background-color: #0F5298;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.editprofile h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #19B3D3;
+    color: whitesmoke;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 30px;
+}
+
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    margin-left: 50px;
+}
+
+.left_area span {
+    color: #19B3D3;
+}
+
+.logout_btn {
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover {
+    background: #0B87A6;
+}
+
+.sidebar {
+    z-index: 1;
+    top: 0;
+    background: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: calc(105% - 9%) !important;
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .profile_info .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #19B3D3;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 25px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color: #19B3D3;
+}
+
+#check:checked~.sidebar {
+    left: -185px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 165px;
+    width: 100%;
+}
+
+#check:checked~.content {
+    margin-left: 60px;
+}
+
+#check:checked~.sidebar .profile_info {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+.content .card p {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/** Main-Content **/
+
+.content {
+    width: (100% - 250px);
+    margin-top: 60px;
+    padding: 20px;
+    padding-left: 150px;
+    background: #64b5f6;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    transition: 0.5s;
+}
+
+.profile-pic {
+    background: url(background.jpg);
+    width: 90.5%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.user-pic {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+
+.img-select-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-file {
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    background: #2565ae;
+    color: #fff;
+    font-weight: bold;
+    height: 35px;
+    width: 230px;
+    padding-top: 12px;
+    padding-left: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-submit {
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    background: #2565ae;
+    color: #fff;
+    font-weight: bold;
+    height: 45px;
+    width: 280px;
+    padding-top: 5px;
+    padding-left: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-file:hover, .btn-submit:hover {
+    background: #0F5298;
+    color: #D5f3fe;
+}
+
+.profile-info {
+    background: #fff;
+    width: 90.5%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.info-form {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.info-form label {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #01579b;
+    font-weight: bold;
+}
+
+.info-form input {
+    font-size: 1.5rem;
+    height: 40px;
+    width: 94%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.info-form textarea {
+    height: 100px;
+    width: 94%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    resize: none;
+    border: 3px solid black;
+}
+
+.info-form input:focus, textarea:focus {
+    outline: none;
+}
+
+/*
+#btn-cancel {
+    border: none;
+    height: 50px;
+    font-size: 1.5rem;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background: royalblue;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-save {
+    border: none;
+    height: 50px;
+    font-size: 1.5rem;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background: royalblue;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-save:hover, #btn-cancel:hover {
+    color: yellow;
+    background: midnightblue;
+}
+*/
+
+#btn-cancel {
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%)
+}
+
+#btn-cancel {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#btn-cancel:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-save {
+    background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%)
+}
+
+.btn-save {
+    font-size: 1.1rem;
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer */
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: auto;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#fff, cyan);
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(cyan, hotpink);
+    border-radius: 25px;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    color: #333;
+    line-height: 0.5;
+    padding-left: 130px;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.social-media {
+    margin-bottom: 50px;
+}
+
+.fab {
+    height: 30px;
+    width: 50px;
+    padding-top: 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.fab:hover {
+    background: transparent;
+    color: orangered;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: lightskyblue;
+    color: white;
+}
+
+.fa-discord {
+    background: black;
+    color: #fff;
+}
+
+.fa-microsoft {
+    background: #fff;
+    color: royalblue;
+}
+
+.fa-instagram {
+    background: hotpink;
+    color: #fff;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+    .editprofile {
+        width: 780px;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+    /* Header */
+    .sidebar {
+        display: none;
+    }
+    #sidebar_btn {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 20px;
+        transition: 0s;
+        padding-bottom: 25px;
+    }
+    #check:checked~.content {
+        margin-left: 0;
+    }
+    .mobile_nav {
+        display: block;
+        width: calc(100% - 0%);
+    }
+    .nav_bar {
+        background: #222;
+        width: (100% - 0px);
+        margin-top: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .nav_bar .mobile_profile_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .nav_bar .nav_btn {
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+    }
+    .nav_bar .nav_btn:hover {
+        color: #19B3D3;
+    }
+    .mobile_nav_items {
+        background: #2F323A;
+        display: none;
+    }
+    .mobile_nav_items a {
+        color: #fff;
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 60px;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+    }
+    .mobile_nav_items a:hover {
+        background: #19B3D3;
+    }
+    .mobile_nav_items i {
+        padding-right: 10px;
+    }
+    .active {
+        display: block;
+    }
+    /* Main-Content */
+    .profile-pic {
+        margin-left: 35px;
+    }
+    .profile-info {
+        margin-left: 35px;
+    }
+    .info-form center {
+        padding-right: 35px;
+    }
+    /* Footer */
+    footer {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .logout_btn{
+        margin-top: -35px !important;
+    }
+    /* Header */
+    .editprofile {
+        width: 100vw;
+        margin-left: -20px;
+    }
+    /* Main-Content */
+    .profile-pic, .profile-info {
+        margin-left: 28px;
+    }
+    .content {
+        padding-left: 0;
+    }
+    .user-pic {
+        height: 250px;
+        width: 250px;
+    }
+    .img-select-button {
+        margin-left: 20px;
+    }
+    .btn-file {
+        margin-bottom: 10px;
+        width: 250px;
+    }
+    .btn-submit {
+        width: 270px;
+    }
+    .info-form {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .info-form label {
+        font-size: 1.5rem;
+    }
+    .info-form input {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .info-form textarea {
+        font-size: 1.5rem;
+        width: 90%;
+        height: 150px;
+    }
+    #btn-cancel, .btn-save {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    .left_area h3 {
+        font-size: 15px;
+        width: 15px;
+    }
+    .left_area span {
+        color: #19B3D3;
+    }
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 0rem 0rem 1rem 0rem;
+        margin: auto;
+        color: #333;
+        line-height: 0.5;
+    }
+    footer h3 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+    .social-media {
+        margin-top: 0px;
+    }
+    .fab {
+        height: 30px;
+        width: 50px;
+        padding-top: 15px;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: lightskyblue;
+        color: white;
+    }
+    .fa-discord {
+        background: black;
+        color: #fff;
+    }
+    .fa-microsoft {
+        background: #fff;
+        color: royalblue;
+    }
+    .fa-instagram {
+        background: hotpink;
+        color: #fff;
+    }
+}

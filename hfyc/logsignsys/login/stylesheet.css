@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #3d6098;
+}
+
+body {
+    height: 100vh;
+    overflow: auto;
+}
+
+.wrapper {
+    height: 108vh;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    background-color: #22242A;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    height: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    background-color: #22242A;
+}
+
+.left_area span {
+    color: #B3e5fc;
+    background-color: #22242A;
+    margin-left: -268px;
+    bottom: 26px;
+}
+
+.signup_btn {
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -25px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.signup_btn:hover {
+    background: #0B87A6;
+}
+
+.message {
+    display: inline-block;
+    margin-top: 6vh;
+    font-size: 1.4em;
+    color: darkslateblue;
+    font-weight: bold;
+    padding: 0.4em;
+    border-radius: 10%;
+    background-color: skyblue;
+}
+
+.logo {
+    margin-top: 20px;
+    height: auto;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-style: inherit;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.center {
+    font-family: -apple-system;
+    color: seashell;
+}
+
+.input-field {
+    position: relative;
+    width: 400px;
+}
+
+.input-field input:focus~label {
+    color: wheat;
+}
+
+#username:focus {
+    outline: none;
+    box-shadow: 0 0 10px wheat;
+    transition: .5s;
+    color: white;
+    border-bottom: 3px solid wheat;
+}
+
+#password:focus {
+    outline: none;
+    box-shadow: 0 0 10px wheat;
+    transition: .5s;
+    color: white;
+    border-bottom: 3px solid wheat;
+}
+
+label {
+    position: absolute;
+    top: 23px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    left: -30px;
+    pointer-events: none;
+    transition: .5s;
+    color: whitesmoke;
+    background-color: #3d6098;
+    ;
+    font-weight: 800;
+}
+
+#username {
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    margin-left: -38px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: -apple-system;
+    color: #080808;
+    padding-left: 15px;
+    padding-top: 3px;
+    height: 66px;
+    width: 485px;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+}
+
+#password {
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    margin-left: -38px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: -apple-system;
+    color: #080808;
+    padding-left: 15px;
+    padding-top: 3px;
+    height: 66px;
+    width: 485px;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+.user-role {
+    margin-top: 50px;
+    margin-left: -35px;
+    height: 50px;
+    width: 485px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: -apple-system;
+    color: #f5f6fa;
+    background: #2f3640;
+    padding-left: 9px;
+    padding-top: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.select {
+    background: #2f3640;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #f5f6fa;
+    order: 0;
+}
+
+#btnsubmit {
+    width: 490px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 18px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #3498db, #001b48, #3498db);
+    background-size: 200%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    transition: .5s;
+}
+
+#btnsubmit:hover {
+    background-position: right;
+}
+
+span {
+    position: absolute;
+    left: 460px;
+    bottom: 30px;
+    font-size: 20px;
+}
+
+.options {
+    font-family: Verdana;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    padding-left: 2.3rem;
+    font-style: italic;
+    cursor: pointer;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.options a:hover {
+    color: #4DCCBD;
+    transition: .5s;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: auto;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#fff, cyan);
+    transition: 0.3s;
+    border-radius: 25px;
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(cyan, hotpink);
+    border-radius: 25px;
+  }
+  
+footer {
+    text-align: center;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: auto;
+    color: #ffffe5;
+    line-height: 0.5;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+    background-color: #78a3e9;
+}
+
+footer *{
+    background-color: #78a3e9;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.social-media {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.fab {
+    height: 30px;
+    width: 50px;
+    padding-top: 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.fab:hover {
+    background: #005a9e;
+    color: whitesmoke;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fa-twitter {
+    background: lightskyblue;
+    color: white;
+}
+
+.fa-discord {
+    background: black;
+    color: #fff;
+}
+
+.fa-microsoft {
+    background: #fff;
+    color: royalblue;
+}
+
+.fa-instagram {
+    background: hotpink;
+    color: #fff;
+}
+
+#eye {
+    position: relative;
+    left: 250px;
+    top: -41px;
+}
+
+/*
+.footer{
+    color: white;
+    font-size: 13px;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+    height: 10vh;
+    position: relative;
+    top: 16vh;
+}
+
+.footer .descriptions{
+    height: 50px;
+    text-align: center;
+    word-spacing: 100px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+/*https://stackoverflow.com/questions/47551418/zoom-effect-on-text-words-on-mouseover
+.footer .descriptions a{
+    color: ivory;
+    display: inline-block;
+    transition: .1s;
+    -webkit-transition: all 0.1s ease-out;
+}
+.footer .descriptions a:hover{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.4) ;
+    color: peachpuff;
+    cursor: pointer;
+}
+
+*/
+
+@media (max-width: 920px) {
+    body {
+        overflow: auto;
+        height: auto;
+    }
+    .options {
+        display: flex;
+        font-size: 4em;
+    }
+    .wrapper {
+        position: relative;
+        height: 150vh;
+    }
+    .form {
+        display: block;
+        align-items: center;
+        padding-left: 30px;
+    }
+    .logo {
+        margin-top: 30px;
+        height: auto;
+    }
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 6vw;
+        color: white;
+        text-align: center;
+    }
+    .center {
+        font-family: -apple-system;
+        color: seashell;
+    }
+    .input-field {
+        position: relative;
+        width: 70vw;
+    }
+    .input-field input:focus~label {
+        color: black;
+    }
+    #username:focus {
+        outline: none;
+        box-shadow: 0 0 10px wheat;
+        color: white;
+        border-bottom: 3px solid wheat;
+    }
+    #password:focus {
+        outline: none;
+        box-shadow: 0 0 10px wheat;
+        color: white;
+        border-bottom: 3px solid wheat;
+    }
+    label {
+        position: absolute;
+        top: 23px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        left: -30px;
+        pointer-events: none;
+        transition: .5s;
+        color: whitesmoke;
+        background-color: #3d6098;
+        ;
+        font-weight: 800;
+    }
+    #username {
+        border: none;
+        outline: none;
+        margin-top: 50px;
+        margin-left: -38px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: -apple-system;
+        color: #080808;
+        padding-left: 15px;
+        padding-top: 3px;
+        height: 10vh;
+        width: 75vw;
+        border-bottom: 3px solid white;
+        border-radius: 2px;
+        background-color: #3d6098;
+        ;
+    }
+    #password {
+        border: none;
+        outline: none;
+        margin-top: 50px;
+        margin-left: -38px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: -apple-system;
+        color: #080808;
+        padding-left: 15px;
+        padding-top: 3px;
+        height: 10vh;
+        width: 75vw;
+        background-color: #3d6098;
+        ;
+        border-bottom: 3px solid white;
+    }
+
+    #eye {
+        left: 275px;
+        top: -31px;
+    }
+
+    .user-role {
+        height: 50px;
+        width: 76vw;
+        margin-left: -2em;
+        padding: 0px;
+        margin-top: 3em;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: -apple-system;
+        color: #f5f6fa;
+        background: #2f3640;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .select {
+        background: #2f3640;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        color: #f5f6fa;
+        order: 0;
+    }
+    #btnsubmit {
+        width: 76vw;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: -2vw;
+        border-radius: 25px;
+        background: linear-gradient(120deg, #3498db, #001b48, #3498db);
+        background-size: 200%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        font-size: 17px;
+        font-weight: 800;
+        transition: .5s;
+    }
+    #btnsubmit:hover {
+        background-position: right;
+    }
+
+    .link {
+        font-family: Verdana;
+        font-size: 0.9rem;
+        font-style: italic;
+        margin-left: 9vw;
+        color: white;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    .link:hover {
+        transition: .5s;
+        color: #4DCCBD;
+    }
+
+        /*span {
+        position: absolute;
+        left: auto;
+        right: 0vw;
+        bottom: 7.5vh;
+        font-size: 20px;
+    }
+    .left_area span{
+        font-size: 0.8em;
+        top: 2.9vh;
+        right: auto;
+        margin-left: 0px;
+    }*/
+
+    span {
+        position: absolute;
+        left: 460px;
+        bottom: 30px;
+        font-size: 20px;
+    }
+
+    .left_area span {
+        color: #B3e5fc;
+        background-color: #22242A;
+        margin-left: -268px;
+        bottom: 26px;
+    }
+    /*
+.footer{
+    color: white;
+    font-size: 13px;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+    height: 250px;
+    position: relative;
+    margin-top: -30px;
+}
+
+.footer .descriptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 50px;
+    text-align: center;
+    word-spacing: 100px;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    left: -7px;
+}
+
+/*https://stackoverflow.com/questions/47551418/zoom-effect-on-text-words-on-mouseover
+.footer .descriptions a{
+    color: ivory;
+    display: inline-block;
+    transition: .1s;
+    -webkit-transition: all 0.1s ease-out;
+}
+.footer .descriptions a:hover{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.4) ;
+    color: peachpuff;
+    cursor: pointer;
+}
+*/
+    footer {
+        text-align: center;
+        padding: 0rem 0rem 2rem 0rem;
+        margin: auto;
+        color: #ffffe5;
+        line-height: 0.5;
+        font-family: "Roboto", sans-serif;
+    }
+    footer h3 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    footer p {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .social-media {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .fab {
+        height: 30px;
+        width: 50px;
+        padding-top: 15px;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .fab:hover {
+        background: #005a9e;
+        color: whitesmoke;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .fa-twitter {
+        background: lightskyblue;
+        color: white;
+    }
+    .fa-discord {
+        background: black;
+        color: #fff;
+    }
+    .fa-microsoft {
+        background: #fff;
+        color: royalblue;
+    }
+    .fa-instagram {
+        background: hotpink;
+        color: #fff;
+    }
+}
+
+@media (max-width: 920px) and (max-height: 600px){
+    .left_area h3{
+        font-size: 0.8em;
+    }
+    .left_area span{
+        font-size: 0.9em;
+        left: 36.9vw;
+        top: 3.4vh;
+    }
+    .link{
+        margin-left: 33vw;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    #eye {
+        left: 200px;
+    }   
+}
+    
+@media screen and (max-width: 470px) {
+
+    .wrapper {
+        height: 120vh;
+    }
+
+    #btnsubmit {
+        margin-left:-11vw;
+    }
+
+    .left_area span {
+        color: #B3e5fc;
+        background-color: #22242A;
+        margin-left: -318px;
+        bottom: 40px;
+        font-size: 0.5em;
+
+    }
+
+    .left_area h3{
+        font-size: 1em;
+    }
+
+    #eye {
+        left: 150px;
+        margin-right: 77px;
+        top: -41px;
+    }   
+
+    footer h3 {
+        margin-top: 20px;
+    }
+}
